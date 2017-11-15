@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='utf-8'?>
+<class name="com.beifengorm.bean.Style" table="style">
+	<Id name="styleId" column="styleId"/>
+	<property name="style" column="style"/>
+	<onetomany name="booklist" class="com.beifengorm.bean.Book">
+		<column name="styleId"/>
+	</onetomany>
+</class>

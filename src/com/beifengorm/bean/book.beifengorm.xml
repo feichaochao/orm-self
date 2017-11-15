@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='utf-8'?>
+<class name="com.beifengorm.bean.Book" table="book">
+	<Id name="bookId" column="bookId"/>
+	<property name="bookname" column="bookname"/>
+	<property name="author" column="author"/>
+	<property name="publisher" column="publisher"/>
+	<manytoone name="style" class="com.beifengorm.bean.Style">
+		<column name="styleId"/>
+	</manytoone>
+</class>

@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='utf-8'?>
+<datasources>
+	<datasource>
+		<jdbc>
+			<property name="driver">com.mysql.jdbc.Driver</property>
+			<property name="url" value="jdbc:mysql://127.0.0.1:3306/beifeng"/>
+			<property name="username" value="root"/>
+			<property name="password" value="root"/>
+		</jdbc>
+	</datasource>
+	
+	<orm-mapping>
+		<list>
+			<value>/com/beifengorm/bean/book.beifengorm.xml</value>
+			<value>/com/beifengorm/bean/style.beifengorm.xml</value>
+		</list>
+	</orm-mapping>
+</datasources>
